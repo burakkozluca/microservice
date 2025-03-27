@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBus", "MessageBus\Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Identity", "Services.Identity\Services.Identity.csproj", "{970E8DE2-A1FA-4E57-91F9-12FB4607419A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.ProductAPI", "Services.ProductAPI\Services.ProductAPI.csproj", "{4F2BDD56-AAC3-4C2D-899B-D0BE4407CBC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{970E8DE2-A1FA-4E57-91F9-12FB4607419A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{970E8DE2-A1FA-4E57-91F9-12FB4607419A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{970E8DE2-A1FA-4E57-91F9-12FB4607419A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F2BDD56-AAC3-4C2D-899B-D0BE4407CBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F2BDD56-AAC3-4C2D-899B-D0BE4407CBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F2BDD56-AAC3-4C2D-899B-D0BE4407CBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F2BDD56-AAC3-4C2D-899B-D0BE4407CBC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

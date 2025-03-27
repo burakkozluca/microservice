@@ -125,3 +125,4 @@
 /Users/burakkozluca/RiderProjects/microservis/Services.Identity/bin/Debug/net8.0/Services.Identity.staticwebassets.endpoints.json
 /Users/burakkozluca/RiderProjects/microservis/Services.Identity/obj/Debug/net8.0/staticwebassets.build.endpoints.json
 /Users/burakkozluca/RiderProjects/microservis/Services.Identity/obj/Debug/net8.0/staticwebassets/msbuild.Services.Identity.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/burakkozluca/RiderProjects/microservis/Services.Identity/obj/Debug/net8.0/Services.Identity.sourcelink.json
