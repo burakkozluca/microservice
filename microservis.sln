@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Identity", "Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.ProductAPI", "Services.ProductAPI\Services.ProductAPI.csproj", "{4F2BDD56-AAC3-4C2D-899B-D0BE4407CBC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.ShoppingCart.API", "Services.ShoppingCart.API\Services.ShoppingCart.API.csproj", "{C2329DE1-123F-4BC8-B967-5DB853224460}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{4F2BDD56-AAC3-4C2D-899B-D0BE4407CBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F2BDD56-AAC3-4C2D-899B-D0BE4407CBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F2BDD56-AAC3-4C2D-899B-D0BE4407CBC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2329DE1-123F-4BC8-B967-5DB853224460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2329DE1-123F-4BC8-B967-5DB853224460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2329DE1-123F-4BC8-B967-5DB853224460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2329DE1-123F-4BC8-B967-5DB853224460}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

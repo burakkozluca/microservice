@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  # Identity API
+  identity.api:
+    build:
+      context: ./Services.IdentityAPI
+      dockerfile: Dockerfile
+    ports:
+      - "5001:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__PostgreSql=User Id=postgres.dbkzibfxjwcgdkoynkab;Password=Burak123.;Server=aws-0-eu-central-1.pooler.supabase.com;Port=5432;Database=postgres
+    networks:
+      - microservices-network
+
+  # Product API
+  product.api:
+    build:
+      context: ./Services.ProductAPI
+      dockerfile: Dockerfile
+    ports:
+      - "5002:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__PostgreSql=User Id=postgres.qwdvwllyrtqilzeatmsr;Password=Burak123.;Server=aws-0-eu-central-1.pooler.supabase.com;Port=5432;Database=postgres
+    networks:
+      - microservices-network
+
+  # Shopping Cart API
+  shoppingcart.api:
+    build:
+      context: ./Services.ShoppingCart.API
+      dockerfile: Dockerfile
+    ports:
+      - "5003:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__PostgreSql=User Id=postgres.fqruosdpjhfesanwwrsv;Password=Burak123.;Server=aws-0-eu-central-1.pooler.supabase.com;Port=5432;Database=postgres
+      - RabbitMQ__Host=rabbitmq
+      - RabbitMQ__UserName=guest
+      - RabbitMQ__Password=guest
+    depends_on:
+      - rabbitmq
+    networks:
+      - microservices-network
+
+  # RabbitMQ
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    networks:
+      - microservices-network
+
+networks:
+  microservices-network:
+    driver: bridge
+
+volumes:
+  postgres_data: 

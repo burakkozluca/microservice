@@ -1,6 +1,3 @@
 namespace Services.ShoppingCart.API.Data;
 
-public class DataAssembly
-{
-    
-}
+public struct DataAssembly;

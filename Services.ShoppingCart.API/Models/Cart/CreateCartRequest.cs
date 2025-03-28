@@ -1,6 +1,9 @@
+using Services.ShoppingCart.API.Models.Cart.Create;
+
 namespace Services.ShoppingCart.API.Models.Cart;
 
-public class CreateCartRequest
+public record CreateCartRequest
 {
-    
+    public string UserId { get; set; }
+    public List<CartDetailRequest> CartDetails { get; set; }
 }
